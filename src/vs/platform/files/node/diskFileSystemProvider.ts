@@ -159,7 +159,7 @@ export class DiskFileSystemProvider extends Disposable implements IFileSystemPro
 
 			let flags: string | undefined = undefined;
 			if (opts.create) {
-				if (isWindows && await exists(filePath)) {
+				if (false) {
 					try {
 						// On Windows and if the file exists, we use a different strategy of saving the file
 						// by first truncating the file and then writing with r+ flag. This helps to save hidden files on Windows
